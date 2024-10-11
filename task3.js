@@ -40,8 +40,8 @@ function startai() {
 
 function startgame() {
     resetGame(); 
-    cell.forEach(cell => cell.removeEventListener("click", cellclickai)); // Remove AI listeners
-    cell.forEach(cell => cell.addEventListener("click", cellclick)); // Add player event listeners
+    cell.forEach(cell => cell.removeEventListener("click", cellclickai)); 
+    cell.forEach(cell => cell.addEventListener("click", cellclick)); 
     running = true;
     who.textContent = `${currentplayer}'s Turn`;
    
